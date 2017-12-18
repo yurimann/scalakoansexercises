@@ -1,0 +1,263 @@
+[0m[[0minfo[0m] [0m[32mKoans:[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutAsserts:[0m[0m
+[0m[[0minfo[0m] [0m[32m- asserts can take a boolean argument[0m[0m
+[0m[[0minfo[0m] [0m[32m- asserts can include a message[0m[0m
+[0m[[0minfo[0m] [0m[32m- true and false values can be compared with should matchers[0m[0m
+[0m[[0minfo[0m] [0m[32m- booleans in asserts can test equality[0m[0m
+[0m[[0minfo[0m] [0m[32m- sometimes we expect you to fill in the values[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutValAndVar:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Vars are variables, and may be reassigned[0m[0m
+[0m[[0minfo[0m] [0m[32m- vals are values, and may not be reassigned, analogous to final in Java[0m[0m
+[0m[[0minfo[0m] [0m[32m- All vals and var types are inferred by default, but you can add the type explicitly[0m[0m
+[0m[[0minfo[0m] [0m[32m- If you want to include a space in your variable or value use backticks[0m[0m
+[0m[[0minfo[0m] [0m[32m- Any strange characters that you wish to use in a variable or value can be used after an underscore[0m[0m
+[0m[[0minfo[0m] [0m[32m- Backticks can also be used to spite your co-workers and send them into a spiral of confusion and agony![0m[0m
+[0m[[0minfo[0m] [0m[32m- A lazy val is assignment that will not evaluated until it is called. Note there is no lazy var[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutLiteralBooleans:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Boolean literals are either true or false, using the true or false keyword[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutLiteralNumbers:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Integer Literals are 32-bit and can be created from decimal, hexadecimal[0m[0m
+[0m[[0minfo[0m] [0m[32m- Long Literals are 64 bit, are specified by appending an L or l at the end;[0m[0m
+[0m[[0minfo[0m] [0m[32m   l is rarely used since it looks like a 1[0m[0m
+[0m[[0minfo[0m] [0m[32m- Float and Double Literals are IEEE 754 for specific,[0m[0m
+[0m[[0minfo[0m] [0m[32m   Float are 32-bit length, Doubles are 64-bit.[0m[0m
+[0m[[0minfo[0m] [0m[32m   Floats can be coerced using a f or F suffix, and[0m[0m
+[0m[[0minfo[0m] [0m[32m   Doubles can be coerced using a d or D suffix.[0m[0m
+[0m[[0minfo[0m] [0m[32m   Exponent are specified using e or E.[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutLiteralStrings:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Character Literals are quoted with single quotes[0m[0m
+[0m[[0minfo[0m] [0m[32m- Character Literals can use hexadecimal Unicode[0m[0m
+[0m[[0minfo[0m] [0m[32m- Character Literals can use octal as well[0m[0m
+[0m[[0minfo[0m] [0m[32m- Character Literals can use escape sequences[0m[0m
+[0m[[0minfo[0m] [0m[32m- One-Line String Literals are surrounded by quotation marks.[0m[0m
+[0m[[0minfo[0m] [0m[32m- String Literals can contain escape sequences.[0m[0m
+[0m[[0minfo[0m] [0m[32m- Multiline String literals[0m[0m
+[0m[[0minfo[0m] [0m[32m	are surrounded[0m[0m
+[0m[[0minfo[0m] [0m[32m	by three quotation marks[0m[0m
+[0m[[0minfo[0m] [0m[32m- Use stripMargin to prettify multi-line strings[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutMethods:[0m[0m
+[0m[[0minfo[0m] [0m[32m- A method's last statement will be what is returned[0m[0m
+[0m[[0minfo[0m] [0m[32m There is no need for the keyword `return`.[0m[0m
+[0m[[0minfo[0m] [0m[32m When a method includes a `=` after the method declaration that[0m[0m
+[0m[[0minfo[0m] [0m[32m will infer the return type[0m[0m
+[0m[[0minfo[0m] [0m[32m- If you want to include the return type explicitly,[0m[0m
+[0m[[0minfo[0m] [0m[32m no one will stop you[0m[0m
+[0m[[0minfo[0m] [0m[32m- If a method returns two different types and no explicit[0m[0m
+[0m[[0minfo[0m] [0m[32m return type is defined,[0m[0m
+[0m[[0minfo[0m] [0m[32m the type of the method will likely be inferred as the[0m[0m
+[0m[[0minfo[0m] [0m[32m common super parent of the two types being returned[0m[0m
+[0m[[0minfo[0m] [0m[32m- If a method does not of have equal it is considered `Unit` which is analogous to `void` in Java[0m[0m
+[0m[[0minfo[0m] [0m[32m- If you want to have an = on the method, while still explicitly returning Unit you can make the return type `Unit`,[0m[0m
+[0m[[0minfo[0m] [0m[32m this also analogous to `void[0m[0m
+[0m[[0minfo[0m] [0m[32m- Once you have an =, it is understood that there will be a return type and can be inferred[0m[0m
+[0m[[0minfo[0m] [0m[32m- Of course if you wish to be explicit about the return type, you can attach it at the end of the method[0m[0m
+[0m[[0minfo[0m] [0m[32m- When performing recursion, the[0m[0m
+[0m[[0minfo[0m] [0m[32mreturn type on the method is mandatory![0m[0m
+[0m[[0minfo[0m] [0m[32m- If you want to ensure a method is not only recursive but _tail recursive_,[0m[0m
+[0m[[0minfo[0m] [0m[32m you can get help from the scala compiler to ensure that it is indeed a[0m[0m
+[0m[[0minfo[0m] [0m[32m tail recursive call by[0m[0m
+[0m[[0minfo[0m] [0m[32m including scala.annotation.tailrec on the method.  When methods are properly tail recursive. The[0m[0m
+[0m[[0minfo[0m] [0m[32m Scala compiler will optimize the code from stack recursion into a loop at compile time[0m[0m
+[0m[[0minfo[0m] [0m[32m- In scala, methods can be placed inside in methods! This comes useful for[0m[0m
+[0m[[0minfo[0m] [0m[32m recursion where accumulator helper methods can be placed inside the outer[0m[0m
+[0m[[0minfo[0m] [0m[32m  method, or you just want to place one method in another for design reasons[0m[0m
+[0m[[0minfo[0m] [0m[32m- Remember you can have strange characters in values and variables as long as they're[0m[0m
+[0m[[0minfo[0m] [0m[32m  after an underscore, well you can do the same in methods[0m[0m
+[0m[[0minfo[0m] [0m[32m- If you also remember you can add reserved words or words with space to any value or variable?[0m[0m
+[0m[[0minfo[0m] [0m[32m Same applies for methods. Although please note that this is uncommon unless you really are into[0m[0m
+[0m[[0minfo[0m] [0m[32m internal DSLs[0m[0m
+[0m[[0minfo[0m] [0m[32m- Convention (not required for the compiler) states that if you a call a method that[0m[0m
+[0m[[0minfo[0m] [0m[32mreturns a Unit, invoke that method with empty parenthesis, other leave the parenthesis out[0m[0m
+[0m[[0minfo[0m] [0m[32m- Methods with colons are right-associative, that means the object that a method is on will be on[0m[0m
+[0m[[0minfo[0m] [0m[32mthe _right_ and the method parameter will be on the _left_[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutClasses:[0m[0m
+[0m[[0minfo[0m] [0m[32m- val parameters in class definition define getter[0m[0m
+[0m[[0minfo[0m] [0m[32m- var parameters in class definition define getter and setter[0m[0m
+[0m[[0minfo[0m] [0m[32m- fields defined internally are private to class[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutUniformAccessPrinciple:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Can access age as parameterless method[0m[0m
+[0m[[0minfo[0m] [0m[32m- Can access age as property[0m[0m
+[0m[[0minfo[0m] [0m[32m- Cannot add parameter to Method invocation[0m[0m
+[0m[[0minfo[0m] [0m[32m- What happens when I update current year using property[0m[0m
+[0m[[0minfo[0m] [0m[32m- What happens when I update current year using method[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutConstructors:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Primary constructor specified with a parameter requires that parameter to be passed in[0m[0m
+[0m[[0minfo[0m] [0m[32m- Class with no class parameters is called with no arguments[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutParentClasses:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Class hierarchy is linear, a class can only extend from one parent class[0m[0m
+[0m[[0minfo[0m] [0m[32m- A class that extends from another is polymorphic[0m[0m
+[0m[[0minfo[0m] [0m[32m- An abstract class, as in Java, cannot be instantiated and only inherited[0m[0m
+[0m[[0minfo[0m] [0m[32m- A class can be placed inside an abstract class just like in java[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutOptions:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Option can have one of two values - Some or None[0m[0m
+[0m[[0minfo[0m] [0m[32m- Represent null with None because null is a bad idea[0m[0m
+[0m[[0minfo[0m] [0m[32m- Provide a default value for None[0m[0m
+[0m[[0minfo[0m] [0m[32m- checking whether option has value[0m[0m
+[0m[[0minfo[0m] [0m[32m- Option can also be used with pattern matching[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutObjects:[0m[0m
+[0m[[0minfo[0m] [0m[32m- An object is a singleton. One object -- that's it. This object is a replacement of static in Java,[0m[0m
+[0m[[0minfo[0m] [0m[32m and is called upon much in the same way[0m[0m
+[0m[[0minfo[0m] [0m[32m- Here is proof an object is a singleton, and not a static method in a class[0m[0m
+[0m[[0minfo[0m] [0m[32m- An object that has the same name as class is called a companion object,[0m[0m
+[0m[[0minfo[0m] [0m[32m it is used to contain factories for the class that it complements[0m[0m
+[0m[[0minfo[0m] [0m[32m- A companion object stores shared variables and values for every instantiated class to share.[0m[0m
+[0m[[0minfo[0m] [0m[32m (See SecretAgent class and companion object above).[0m[0m
+[0m[[0minfo[0m] [0m[32m- A companion object can also see private values and variables of the instantiated objects[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutApply:[0m[0m
+[0m[[0minfo[0m] [0m[32m- The apply method is a magical method in Scala, it is a method that doesn't require you[0m[0m
+[0m[[0minfo[0m] [0m[32mto leave out the entire method name![0m[0m
+[0m[[0minfo[0m] [0m[32m- The apply method can also be used in singleton objects as well, in fact, it is the most common way[0m[0m
+[0m[[0minfo[0m] [0m[32m          to create a factory method in an object[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutTuples:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Tuples can be created easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Tuple items may be accessed individually[0m[0m
+[0m[[0minfo[0m] [0m[32m- Tuples may be of mixed type[0m[0m
+[0m[[0minfo[0m] [0m[32m- Tuples items can be swapped on a Tuple 2[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutHigherOrderFunctions:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Meet lambda. Anonymous function[0m[0m
+[0m[[0minfo[0m] [0m[32m- An anonymous function can also take on a different look by taking out the brackets[0m[0m
+[0m[[0minfo[0m] [0m[32m- Meet closure. Closure is any function that closes over the environment[0m[0m
+[0m[[0minfo[0m] [0m[32m- We can take that closure and throw into a method and it will still hold the environment[0m[0m
+[0m[[0minfo[0m] [0m[32m- function returning another function[0m[0m
+[0m[[0minfo[0m] [0m[32m- function returning another function using an anonymous function[0m[0m
+[0m[[0minfo[0m] [0m[32m- isInstanceOf is the same as instanceof in java, but in this case the parameter types can be[0m[0m
+[0m[[0minfo[0m] [0m[32m 'blanked out' using existential types with is a single underline, since parameter type are unknown[0m[0m
+[0m[[0minfo[0m] [0m[32m at runtime.[0m[0m
+[0m[[0minfo[0m] [0m[32m- function taking another function as parameter. Helps in composing functions.[0m[0m
+[0m[[0minfo[0m] [0m[32m Hint: a map method applies the function to each element of a list[0m[0m
+[0m[[0minfo[0m] [0m[32m- Currying is a technique to transform function with multiple parameters to function with one parameter[0m[0m
+[0m[[0minfo[0m] [0m[32m- Currying allows you to create specialized version of generalized function[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutEmptyValues:[0m[0m
+[0m[[0minfo[0m] [0m[32m- None equals None[0m[0m
+[0m[[0minfo[0m] [0m[32m- None should be identical to None[0m[0m
+[0m[[0minfo[0m] [0m[32m- None can be converted to a String[0m[0m
+[0m[[0minfo[0m] [0m[32m- An empty list can be represented by another nothing value: Nil[0m[0m
+[0m[[0minfo[0m] [0m[32m- None can be converted to an empty list[0m[0m
+[0m[[0minfo[0m] [0m[32m- None is considered empty[0m[0m
+[0m[[0minfo[0m] [0m[32m- None can be cast Any, AnyRef or AnyVal[0m[0m
+[0m[[0minfo[0m] [0m[32m- None cannot be cast to all types of objects[0m[0m
+[0m[[0minfo[0m] [0m[32m- None can be used with Option instead of null references[0m[0m
+[0m[[0minfo[0m] [0m[32m- Some is the opposite of None for Option types[0m[0m
+[0m[[0minfo[0m] [0m[32m- Option.getOrElse can be used to provide a default in the case of None[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutLists:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Eq tests identity (same object)[0m[0m
+[0m[[0minfo[0m] [0m[32m- == tests equality (same content)[0m[0m
+[0m[[0minfo[0m] [0m[32m- Nil lists are identical, even of different types[0m[0m
+[0m[[0minfo[0m] [0m[32m- Lists are easily created[0m[0m
+[0m[[0minfo[0m] [0m[32m- Lists can be accessed via head and tail[0m[0m
+[0m[[0minfo[0m] [0m[32m- Lists can accessed by position[0m[0m
+[0m[[0minfo[0m] [0m[32m- Lists are immutable[0m[0m
+[0m[[0minfo[0m] [0m[32m- Lists have many useful methods[0m[0m
+[0m[[0minfo[0m] [0m[32m- Functions over lists can use _ as shorthand[0m[0m
+[0m[[0minfo[0m] [0m[32m- Functions over lists can use () instead of {}[0m[0m
+[0m[[0minfo[0m] [0m[32m- Lists can be 'reduced' with a mathematical operation[0m[0m
+[0m[[0minfo[0m] [0m[32m- Foldleft is like reduce, but with an explicit starting value[0m[0m
+[0m[[0minfo[0m] [0m[32m- You can create a list from a range[0m[0m
+[0m[[0minfo[0m] [0m[32m- Lists reuse their tails[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutMaps:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Maps can be created easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Maps contain distinct pairings[0m[0m
+[0m[[0minfo[0m] [0m[32m- Maps can be added to easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Map values can be iterated[0m[0m
+[0m[[0minfo[0m] [0m[32m- Maps insertion with duplicate key updates previous entry with subsequent value[0m[0m
+[0m[[0minfo[0m] [0m[32m- Map keys may be of mixed type[0m[0m
+[0m[[0minfo[0m] [0m[32m- Mixed type values can be added to a map [0m[0m
+[0m[[0minfo[0m] [0m[32m- Maps may be accessed[0m[0m
+[0m[[0minfo[0m] [0m[32m- Map elements can be removed easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Accessing a map by key results in an exception if key is not found[0m[0m
+[0m[[0minfo[0m] [0m[32m- Map elements can be removed in multiple[0m[0m
+[0m[[0minfo[0m] [0m[32m- Map elements can be removed with a tuple[0m[0m
+[0m[[0minfo[0m] [0m[32m- Attempted removal of nonexistent elements from a map is handled gracefully[0m[0m
+[0m[[0minfo[0m] [0m[32m- Map equivalency is independent of order[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutSets:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Sets can be created easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Sets contain distinct values[0m[0m
+[0m[[0minfo[0m] [0m[32m- Sets can be added to easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Sets may be of mixed type[0m[0m
+[0m[[0minfo[0m] [0m[32m- Sets can be checked for member existence[0m[0m
+[0m[[0minfo[0m] [0m[32m- Set elements can be removed easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Set elements can be removed in multiple[0m[0m
+[0m[[0minfo[0m] [0m[32m- Set elements can be removed with a tuple[0m[0m
+[0m[[0minfo[0m] [0m[32m- Attempted removal of nonexistent elements from a set is handled gracefully[0m[0m
+[0m[[0minfo[0m] [0m[32m- Sets can be iterated easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Two sets can be intersected easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Two sets can be joined as their union easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- A set is either a subset of another set or it isn't[0m[0m
+[0m[[0minfo[0m] [0m[32m- The difference between two sets can be obtained easily[0m[0m
+[0m[[0minfo[0m] [0m[32m- Set equivalency is independent of order[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutFormatting:[0m[0m
+[0m[[0minfo[0m] [0m[32m- String can be placed in format[0m[0m
+[0m[[0minfo[0m] [0m[32m- Character Literals can be an a single character[0m[0m
+[0m[[0minfo[0m] [0m[32m- Character Literals can be an escape sequence, including octal or hexidecimal[0m[0m
+[0m[[0minfo[0m] [0m[32m- Formatting can also include numbers[0m[0m
+[0m[[0minfo[0m] [0m[32m- Formatting can be used for any number of items, like a string and a number[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutStringInterpolation:[0m[0m
+[0m[[0minfo[0m] [0m[32m- String can be placed in not only in a format method call[0m[0m
+[0m[[0minfo[0m] [0m[32mbut inside a string if you precede the string with an s[0m[0m
+[0m[[0minfo[0m] [0m[32myou can then refer to any value or variable within scope[0m[0m
+[0m[[0minfo[0m] [0m[32mThis is called string interpolation.[0m[0m
+[0m[[0minfo[0m] [0m[32m- String interpolation can include expressions which can[0m[0m
+[0m[[0minfo[0m] [0m[32minclude numbers and strings[0m[0m
+[0m[[0minfo[0m] [0m[32m- If your numbers need special formatting, you can use an[0m[0m
+[0m[[0minfo[0m] [0m[32m`f` prefix before the string instead of an `s`. Once an `f`[0m[0m
+[0m[[0minfo[0m] [0m[32mis placed in front of the string you can apply any printf format rule[0m[0m
+[0m[[0minfo[0m] [0m[32musing a % and the format rule after the variable reference.[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutPatternMatching:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Pattern matching returns something[0m[0m
+[0m[[0minfo[0m] [0m[32m- Pattern matching can return complex somethings[0m[0m
+[0m[[0minfo[0m] [0m[32m- Pattern matching can match complex expressions[0m[0m
+[0m[[0minfo[0m] [0m[32m- Pattern matching can wildcard parts of expressions[0m[0m
+[0m[[0minfo[0m] [0m[32m- Pattern matching can substitute parts of expressions[0m[0m
+[0m[[0minfo[0m] [0m[32m- Pattern matching can done on regular expression groups[0m[0m
+[0m[[0minfo[0m] [0m[32m- A backquote can be used to refer to a stable variable in scope to create a case statement.[0m[0m
+[0m[[0minfo[0m] [0m[32m This prevents what is called \'Variable Shadowing\'[0m[0m
+[0m[[0minfo[0m] [0m[32m- A backquote can be used to refer to a method parameter as a stable variable to create a case statement.[0m[0m
+[0m[[0minfo[0m] [0m[32m- To pattern match against a List, the list can be broken out into parts,[0m[0m
+[0m[[0minfo[0m] [0m[32m in this case the head (x) and the tail(xs). Since the case doesn't terminate in Nil,[0m[0m
+[0m[[0minfo[0m] [0m[32m xs is interpreted as the rest of the list[0m[0m
+[0m[[0minfo[0m] [0m[32m- To obtain the second you can expand on the pattern. Where x is the first element, y[0m[0m
+[0m[[0minfo[0m] [0m[32m is the second element, and xs is the rest. [0m[0m
+[0m[[0minfo[0m] [0m[32m- Same koan as above, but we are pattern matching of a list with only one item![0m[0m
+[0m[[0minfo[0m] [0m[32m- To pattern match against List, you can also establish a pattern match[0m[0m
+[0m[[0minfo[0m] [0m[32m if you know the exact number of elements in a List[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutCaseClasses:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case classes have an automatic equals method that works[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case classes have an automatic hashcode method that works[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case classes have a convenient way they can be created[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case classes have a convenient toString method defined[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case classes have automatic properties[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case classes can have mutable properties[0m[0m
+[0m[[0minfo[0m] [0m[32m- Safer alternatives exist for altering case classes[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case classes have default and named parameters[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case classes can be disassembled to their constituent parts as a tuple[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutRange:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Range are not inclusive at end of range[0m[0m
+[0m[[0minfo[0m] [0m[32m- Range can specify a step for an increment[0m[0m
+[0m[[0minfo[0m] [0m[32m- Range does not include the last item, even in a step increment[0m[0m
+[0m[[0minfo[0m] [0m[32m- Range can specify to include the last value[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutPartiallyAppliedFunctions:[0m[0m
+[0m[[0minfo[0m] [0m[32m- A partially applied function is a function that you do not apply any or all the[0m[0m
+[0m[[0minfo[0m] [0m[32m arguments, creating another function. This partially applied function[0m[0m
+[0m[[0minfo[0m] [0m[32m doesn't apply any arguments[0m[0m
+[0m[[0minfo[0m] [0m[32m- Partially applied functions can replace any number of arguments[0m[0m
+[0m[[0minfo[0m] [0m[32mAboutPartialFunctions:[0m[0m
+[0m[[0minfo[0m] [0m[32m- A partial function is a trait that when[0m[0m
+[0m[[0minfo[0m] [0m[32m implemented can be used as building blocks to determine[0m[0m
+[0m[[0minfo[0m] [0m[32m a solution.  The trait PartialFunction requires that the[0m[0m
+[0m[[0minfo[0m] [0m[32m the method isDefinedAt and apply be implemented.[0m[0m
+[0m[[0minfo[0m] [0m[32m- Case statements are a quick way to create partial functions. When you create a case[0m[0m
+[0m[[0minfo[0m] [0m[32m statement, the apply and isDefinedAt is created for you.[0m[0m
+[0m[[0minfo[0m] [0m[33m  + ***************************************** [0m[0m
+[0m[[0minfo[0m] [0m[33m  + ***************************************** [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  + Please meditate on koan "The result of partial functions can have an \'andThen\' function added to the end[0m[0m
+[0m[[0minfo[0m] [0m[33m of the chain" of suite "AboutPartialFunctions" [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  +  [0m[0m
+[0m[[0minfo[0m] [0m[33m  + ***************************************** [0m[0m
+[0m[[0minfo[0m] [0m[33m  + ***************************************** [0m[0m
+[0m[[0minfo[0m] [0m[32mInfo Provided - AboutPartialFunctions[0m[0m
+[0m[[0minfo[0m] [0m[32mInfo Provided - Koans[0m[0m
